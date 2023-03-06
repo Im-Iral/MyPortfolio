@@ -1,13 +1,8 @@
 import React, {useState} from 'react'
-
+import { Link } from 'react-router-dom';
 
 function Nav() {
-    //creating a variable Links for creating a link on HOME, ABOUT, CONTACT.
-    let Links =[
-        {name:"HOME",link:"/"},
-        {name:"ABOUT",link:"/"},
-        {name:"CONTACT",link:"/"},
-    ];
+    
     //useState this for calling the icons.
     let [open,setOpen]= useState(false);
   return (
@@ -27,16 +22,20 @@ function Nav() {
             <ion-icon name={open ? 'close':'menu'}/>
             </div>
             <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-orange-100 
-                md:z-auto z-[-1] left-0 w-full 
+                md:z-auto left-0 w-full 
                 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in 
                 ${open ? 'top-20 opacity-100':'top-[-490px]'} md:opacity-100 opacity-0`}>
-                {
-                    Links.map((link)=>(
-                        <li key={link.name} className='md:ml-3 mr-2 text-xl md:my-0 my-7'>
-                            <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-300'>{link.name}</a>
-                        </li>
-                    ))
-                }
+                
+                    <li className='md:ml-3 mr-2 text-xl md:my-0 my-7'>
+                        <Link to='/' className='text-gray-800 hover:text-gray-400 duration-300'>HOME</Link>
+                    </li>
+                    <li className='md:ml-3 mr-2 text-xl md:my-0 my-7'>
+                        <Link to='/About' className='text-gray-800 hover:text-gray-400 duration-300'>ABOUT</Link>
+                    </li>
+                    <li className='md:ml-3 mr-2 text-xl md:my-0 my-7'>
+                        <Link to='/Contact' className='text-gray-800 hover:text-gray-400 duration-300'>CONTACT</Link>
+                    </li>
+                
                 
                 {/* button  */}
                 <button className='bg-orange-600 text-white font-serif py-2 px-6 

@@ -1,15 +1,13 @@
 import './App.css';
-import Nav from './components/Nav';
+import MainLayout from './layout/MainLayout';
 import Profile from './components/Profile';
-import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <>
-      <Nav />
+    <MainLayout>
       <Profile/>
-      <Footer/>
-    </>
+    </MainLayout>
     
   );
 }
