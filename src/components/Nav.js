@@ -38,10 +38,12 @@ function Nav() {
                 
                 
                 {/* button  */}
-                <button className='bg-orange-600 text-white font-serif py-2 px-6 
-                        rounded md:ml-8 mr-2 hover:bg-orange-400 duration-500'>
-                    Get Started
-                </button>
+                <a href='IRAL_resume.pdf' download>
+                    <button className='bg-orange-600 text-white font-serif py-2 px-6 
+                            rounded md:ml-8 mr-2 hover:bg-orange-400 duration-500'>
+                        Get Resume
+                    </button>
+                </a>
             </ul>
         </div>
     </div>
