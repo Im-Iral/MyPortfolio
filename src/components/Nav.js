@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
     
-    //useState this for calling the icons.
+    //useState this for calling the icons. 
     let [open,setOpen]= useState(false);
   return (
     //start of the Navbar.

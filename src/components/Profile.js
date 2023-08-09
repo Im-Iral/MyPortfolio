@@ -3,7 +3,7 @@ import {TypeAnimation} from 'react-type-animation'
 
 function Profile(props) {
   return (
-    <div className=''>
+    <div>
       <main className='px-20 py-6'>
         <div className='flex flex-col justify-center gap-[10px] h-[200px] items-start md:items-center'>
           <h1 className='text-sm font-mono'>Hi, am</h1>
